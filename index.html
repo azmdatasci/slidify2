@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plot of the Mandelbrot set</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Plot of the Mandelbrot set">
+  <meta name="author" content="Asier Zubiaga">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Plot of the Mandelbrot set</h1>
+    <h2>A fairly heavy application that makes a personalized plot of the Mandelbrot set</h2>
+    <p>Asier Zubiaga<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Project</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This project provides a tool to plot the Mandelbrot set. </li>
+<li>The function that constructs the set is adapted from <a href="http://users.utu.fi/attenka/mandelbrot_set.R">http://users.utu.fi/attenka/mandelbrot_set.R</a>. </li>
+<li>The Mandelbrot set is the set of complex numbers c for which the function f(z)=z<sup>2+c</sup> does not diverge when iterated from z=0 [<a href="https://en.wikipedia.org/wiki/Mandelbrot_set">https://en.wikipedia.org/wiki/Mandelbrot_set</a>].</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Input parameters</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The program admits four parameters: </p>
+
+<ul>
+<li>Scale factor: It allows zooming in to see more in detail the boundary of the Mandelbrot set. </li>
+<li>Center X: Changes the center of the plot in the x direction</li>
+<li>Center Y: Changes the center of the plot in the y direction
+Center X and Y are most useful in combination with the scale factor to watch different parts of the set more in detail. </li>
+<li>Maximun iterations: controls the maximum number of iterations done to decide if a point corresponds to the set or not.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Mandelbrot set</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="figure/mandelbrot-1.png" alt="plot of chunk mandelbrot"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Conclusions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The app allows to visualize the fractal structure of the Mandelbrot set.</li>
+<li>By zooming into the boundary of the set, the self-similar structures can be seen </li>
+<li>The present code is not efficient. The server needs more than a minute to update the plot.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Project'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Input parameters'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Mandelbrot set'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusions'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
